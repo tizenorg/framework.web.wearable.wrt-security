@@ -1,0 +1,13 @@
+
+[Unit]
+Description=Wrt security daemon
+Requires=wrt-security-daemon.socket
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/wrt-security-daemon
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+Security Daemon todos:
+
+* One runtime instance should be allowed (DONE)
+* Hide application symbols that should not be exported.
+* Add support for service/module dependencies.
+* Signals blocking/handlers should be added.
+* Connections to other databases should be set.
+* Make it a real daemon (demonize ? auto restarting support ?)
+* Same of the files needs to be separated from the rest of WebRuntime sources:
+    - global_config.cpp
+

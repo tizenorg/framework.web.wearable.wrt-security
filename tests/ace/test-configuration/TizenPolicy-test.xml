@@ -1,0 +1,23 @@
+<policy-set id="Policy-1" combine="first-matching-target">
+<policy>
+    <target>
+        <subject>
+            <subject-match attr="id">tizen</subject-match>
+        </subject>  
+    </target>
+    <rule effect="permit">
+            <condition combine="and">
+                <resource-match attr="resource-id">tizen1resource</resource-match>    
+            </condition>
+    </rule>
+    <rule effect="deny">
+            <condition combine="and">
+                <resource-match attr="resource-id">tizen2resource</resource-match>    
+            </condition>
+    </rule>
+</policy>
+<policy>   
+    <rule effect="deny" />
+</policy>
+</policy-set>
+

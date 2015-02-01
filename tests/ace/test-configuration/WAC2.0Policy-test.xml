@@ -1,0 +1,23 @@
+<policy-set id="Policy-1" combine="first-matching-target">
+<policy>
+    <target>
+        <subject>
+            <subject-match attr="id">wac</subject-match>
+        </subject>  
+    </target>
+    <rule effect="permit">
+            <condition combine="and">
+                <resource-match attr="resource-id">wac1resource</resource-match>    
+            </condition>
+    </rule>
+    <rule effect="deny">
+            <condition combine="and">
+                <resource-match attr="resource-id">wac2resource</resource-match>    
+            </condition>
+    </rule>
+</policy>
+<policy>   
+    <rule effect="permit" />
+</policy>
+</policy-set>
+

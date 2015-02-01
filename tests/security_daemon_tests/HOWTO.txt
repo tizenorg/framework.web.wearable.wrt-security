@@ -1,0 +1,1 @@
+Is required to install '''ipc-tests-demo.xml''' ACE policy file and restart security daemon before executing this test suite.

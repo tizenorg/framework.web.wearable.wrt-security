@@ -1,0 +1,12 @@
+* Thu Sep 12 2013 Hyunwoo Kim <hwlove.kim@samsung.com>
+- Use GDbus instead of dbus-glib
+- Start ecore main loop in main()
+- Add API for removing requested device capabilities of widget
+
+* Tue Aug 20 2013 Hyunwoo Kim <hwlove.kim@samsung.com>
+- Remove ace_check_access and Add ace_check_access_ex.
+- Remove roaming attribute.
+* Mon Aug 5 2013 Hyunwoo Kim <hwlove.kim@samsung.com>
+- Add ace checking API that can return reason of access denial(Privilge or Privacy)
+* Thu Jul 25 2013 Hyunwoo Kim <hwlove.kim@samsung.com>
+- Remove unused logs

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: wrt-security-commons-db
+Description: wrt security common library
+Version: @VERSION@
+Requires: wrt-security-commons sqlite3 db-util
+Libs: -L${libdir} -lwrt-security-commons
+Cflags: -I${includedir}/wrt-security-commons

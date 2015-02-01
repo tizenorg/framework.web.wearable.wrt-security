@@ -1,0 +1,20 @@
+<manifest>
+	<define>
+		<domain name="wrt-security-daemon" />
+		<provide>
+			<label name="wrt-security-daemon::daemon" />
+			<label name="wrt-security-daemon::db" />
+		</provide>
+	</define>
+	<request>
+		<domain name="_" />
+	</request>
+	<assign>
+		<filesystem path="/usr/bin/wrt_security_change_policy.sh" exec_label="none"/>
+		<filesystem path="/usr/bin/wrt-security-daemon" label="wrt-security-daemon" exec_label="wrt-security-daemon"/>
+		<filesystem path="/usr/lib/systemd/system/wrt-security-daemon.service" label="_" exec_label="none" />
+		<filesystem path="/usr/lib/systemd/system/wrt-security-daemon.socket" label="_" exec_label="none" />
+		<filesystem path="/usr/lib/systemd/system/multi-user.target.wants/wrt-security-daemon.service" label="_" exec_label="none" />
+		<filesystem path="/usr/lib/systemd/system/sockets.target.wants/wrt-security-daemon.socket" label="_" exec_label="none" />
+	</assign>
+</manifest>

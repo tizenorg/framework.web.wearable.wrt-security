@@ -1,0 +1,29 @@
+<policy-set id="Policy-1" combine="first-matching-target">
+    <policy>
+
+        <rule effect="permit">
+            <condition>
+                <resource-match attr="device-cap">
+                    resourcePermit
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="deny">
+            <condition>
+                <resource-match attr="device-cap">
+                    resourceDeny
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="prompt-blanket">
+            <condition>
+                <resource-match attr="device-cap">
+                    resourcePrompt
+                </resource-match>
+            </condition>
+        </rule>
+
+    </policy>
+</policy-set>

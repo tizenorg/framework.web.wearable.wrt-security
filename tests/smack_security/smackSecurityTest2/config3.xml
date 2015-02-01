@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        id="http://test.samsung.com/widget/wac/smackSecurityTest3N"
+        version="1.0">
+    <name>WAC Test</name>
+    <description>WAC Test widget</description>
+    <author href="http://www.rd.samsung.pl/" email="w.bielawski@samsung.com;p.misiak@samsung.com">
+        SPRC
+    </author>
+    <license href="http://www.rd.samsung.pl/">
+        Example license Copyright (c) 2009 Samsung Corp.
+    </license>
+    <icon src="icon.png" height="75" width="75"/>
+    <content src="index.html" type="application/xhtml+xml"/>
+    <access network="true" plugins="true" SAMSUNG.alarm="true"/>
+    <update href="http://www.rd.samsung.pl/"/>
+
+
+    <feature name="http://wacapps.net/api/deviceapis" required="true"><param name="testProperty" value="testPropertyValue" /></feature>
+
+    <feature name="http://wacapps.net/api/pim.contact" required="true"/>
+
+    <!-- tag preference is required to test appconfig -->
+    <preference name="TestPreference" value="PreferenceValue"/>
+    <preference name="TestROPreference" value="ProtectedValue" readonly="true"/>
+
+</widget>

@@ -1,0 +1,35 @@
+/* Add style information here */
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+}
+
+#summary {
+    background-color: #ddd;
+    color: #000;
+    padding: 2px;
+}
+
+#log {
+    color: #fff;
+    width: 400px;
+    display: block;
+}
+
+#log .entry {
+    color: #fff;
+    padding: 2px;
+}
+
+#log .passed {
+    background-color: #45DE1B;
+}
+
+#log .failed {
+    background-color: #DE1B1B;
+}
+
+#log .exception {
+    background-color: #DE1BD8;
+}

@@ -1,0 +1,10 @@
+[Unit]
+Description=Wrt Security socket
+
+[Socket]
+ListenStream=/tmp/server
+SocketMode=0777
+PassCredentials=yes
+Accept=false
+SmackLabelIPIn=wrt-security-daemon
+SmackLabelIPOut=wrt-security-daemon

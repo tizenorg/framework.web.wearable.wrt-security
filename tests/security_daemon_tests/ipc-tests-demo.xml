@@ -1,0 +1,52 @@
+<policy-set id="Policy-1" combine="first-matching-target">
+    <policy>
+        <target>
+            <subject>
+                <subject-match attr="name" match="demoMSG" />
+            </subject>
+        </target>
+        <rule effect="deny" />
+    </policy>
+
+    <policy>
+        <rule effect="permit">
+            <condition>
+                <resource-match attr="device-cap">
+                    resource_id_permit
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="deny">
+            <condition>
+                <resource-match attr="device-cap">
+                    resource_id_deny
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="prompt-blanket">
+            <condition>
+                <resource-match attr="device-cap">
+                    resource_id_prompt_blanket
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="prompt-oneshot">
+            <condition>
+                <resource-match attr="device-cap">
+                    resource_id_prompt_oneshot
+                </resource-match>
+            </condition>
+        </rule>
+
+        <rule effect="prompt-session">
+            <condition>
+                <resource-match attr="device-cap">
+                    resource_id_prompt_session
+                </resource-match>
+            </condition>
+        </rule>
+    </policy>
+</policy-set>
